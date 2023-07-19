@@ -1,0 +1,14 @@
+<a
+  [routerLink]="[recipeID]"
+  routerLinkActive="active"
+   style="cursor: pointer"
+  class="list-group-item clearfix">
+  <!--   cursor used to indicate that we can click this item-->
+  <div class="pull-left">
+    <h4 class ="list-group-item-heading">{{recipe.name}}</h4>
+    <p class ="list-group-item-text">{{recipe.description}}</p>
+  </div>
+  <span class="pull-right">
+      <img class="img-responsive" style="height: 50px"  [src] ="recipe.imageURL" alt="{{recipe.name}}">
+    </span>
+</a>

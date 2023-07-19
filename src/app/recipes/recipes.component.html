@@ -1,0 +1,20 @@
+<div class="div">
+  <div class="col-md-5">
+    <app-recipe-list>
+<!--    (recipeWasSelected)="selectedRecipe = $event"> -->
+</app-recipe-list>
+<!--    Same as passing $event to a method-->
+  </div>
+    <div class="col-md-7">
+<!--      <app-recipe-detail *ngIf="selectedRecipe !== undefined; else infoText"-->
+<!--      [recipe]="selectedRecipe">-->
+<!--      </app-recipe-detail>-->
+      <router-outlet></router-outlet>
+<!--      <ng-template #infoText>-->
+<!--        <p>-->
+<!--          Please Select a Recipe-->
+<!--        </p>-->
+<!--      </ng-template>-->
+<!--      If selected Recipe is undefined in place of that Please select a recipe will be displayed.-->
+  </div>
+</div>
